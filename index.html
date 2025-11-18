@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="author" content="Фільшин Едуард">
+  <meta name="description" content="Лабораторна робота №8 з веб-розробки. Виконана Фільшиним Едуардом.">
+  <meta name="keywords" content="веб-розробка, bootstrap, лабораторна робота, адаптивний дизайн">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Фільшин Едуард</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <header class="title">
+    <h1>Лабораторна робота №8</h1>
+  </header>
+
+  <main>
+    <!--NAVBAR START-->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a href="https://dendanwastaken.github.io/WB.Lab8/" class="me-3">
+          <img src="images/favicon.png" alt="Мій сайт" width="32" height="32">
+        </a>
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <i class="bi bi-house-door"></i>
+          Головна
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-info me-1"></i>Про
+                сторінку</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><i
+                  class="bi bi-person-lines-fill me-1"></i>Контакти</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i
+                  class="bi bi-three-dots me-1"></i>Меню</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="makeDark()">Темний</a></li>
+                <li><a class="dropdown-item" href="#" onclick="makeLight()">Світлий</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search" action="https://www.google.com/search" method="get"
+            target="_blank">
+            <input class="form-control me-2 w-auto" type="search" placeholder="Search Google" aria-label="Search"
+              name="q">
+            <button class="btn btn-outline-success d-flex align-items-center" type="submit">
+              <i class="bi bi-search me-1"></i>Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--NAVBAR END-->
+
+    <!--HOME SECTION START-->
+    <section id="home" class="my-4">
+      <h2 class="display-6">Головна</h2>
+
+      <div class="container my-4">
+        <div class="row">
+          <!--LEFT ASIDE START-->
+          <aside class="col-md-4 bg-light p-3 d-flex align-items-center justify-content-center">
+            <p class="fs-5 text-center mb-0">Ласкаво просимо на мою веб-сторінку! Тут ви знайдете інформацію про мене,
+              мої
+              контакти та форму для зв’язку.</p>
+          </aside>
+          <!--LEFT ASIDE END-->
+
+          <!--CENTRAL COLUMN START-->
+          <div class="col-md-8">
+            <h2>Форма з кнопками</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Ім’я:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Введіть ім’я"
+                  autocomplete="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Введіть email">
+              </div>
+              <button type="button" class="btn btn-primary">Відправити</button>
+              <button type="reset" class="btn btn-secondary">Очистити</button>
+            </form>
+          </div>
+          <!--CENTRAL COLUMN END-->
+        </div>
+      </div>
+    </section>
+    <!--HOME SECTION END-->
+
+    <hr>
+
+    <!--ABOUT SECTION START-->
+    <section id="about" class="mb-4 d-flex flex-column align-items-center">
+      <h2 class="display-6">Про сторінку</h2>
+      <div class="container">
+        <div class="row align-items-center">
+          <!--IMAGE COLUMN START-->
+          <div class="col-md-5 d-flex justify-content-md-end justify-content-center">
+            <img src="images/profile-picture.jpg" alt="Profile Picture" class="rounded" width="150" height="150">
+          </div>
+          <!--IMAGE COLUMN END-->
+          <!--TEXT COLUMN START-->
+          <div class="col-md-7">
+            <div style="max-width: 600px;">
+              <p class="fs-5 text-start mx-4">
+                Лабораторна робота виконана студентом <strong>Фільшином Едуардом</strong> з курсу веб-розробки. </p>
+              <p class="fs-5 text-start mx-4">
+                Мета роботи – ознайомитися з бібліотекою <strong>Bootstrap</strong>, створити адаптивну веб-сторінку
+                з використанням типових елементів: навігації, форм, кнопок, колонок та іконок.
+              </p>
+            </div>
+          </div>
+          <!--TEXT COLUMN END-->
+        </div>
+      </div>
+    </section>
+    <!--ABOUT SECTION END-->
+
+    <hr>
+
+    <!--CONTACT SECTION START-->
+    <section id="contact" class="mb-4">
+      <div class="container">
+        <h2 class="display-6 text-center mb-4">Контакти</h2>
+        <div class="row justify-content-center text-center">
+          <!--CONTACT BLOCK EMAIL START-->
+          <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded">
+              <h5><i class="bi bi-envelope-fill me-2"></i>Email</h5>
+              <p>eduard.filshyn.pp.2024@lpnu.ua</p>
+            </div>
+          </div>
+          <!--CONTACT BLOCK EMAIL END-->
+          <!--CONTACT BLOCK SOCIALS START-->
+          <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded">
+              <h5><i class="bi bi-share-fill me-2"></i>Соцмережі</h5>
+              <p>
+                <a href="https://t.me/eduard0726" target="_blank" class="text-decoration-none">Telegram</a><br>
+                <a href="https://www.instagram.com/dendanwastaken/" target="_blank"
+                  class="text-decoration-none">Instagram</a>
+              </p>
+            </div>
+          </div>
+          <!--CONTACT BLOCK SOCIALS END-->
+        </div>
+      </div>
+    </section>
+    <!--CONTACT SECTION END-->
+  </main>
+
+  <!--FOOTER START-->
+  <footer class="text-black text-center p-3">
+    <p>Фільшин Едуард — © 2025</p>
+  </footer>
+  <!--FOOTER END-->
+  
+  <!--SCRIPTS-->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/script.js"></script>
+  <!--./SCRIPTS-->
+</body>
+
+</html>
